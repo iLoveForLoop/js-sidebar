@@ -69,6 +69,19 @@
         transition: opacity 0.4s ease-in-out;
         pointer-events: auto;
       }
+
+      i{
+        cursor: pointer !important;
+      }
+
+      .bar{
+        transition: .3s ease-in-out;
+      }
+
+      .bar:hover{
+        background-color: rgb(102, 102, 102);
+        color: rgb(15, 15, 15);
+      }
   </style>
   <body class="poppins-regular">
     
@@ -86,15 +99,25 @@
         <i class="bi bi-arrow-left-short fs-1" onclick="toggleSidebar()"></i>
       </div>
 
-      <div class="px-3 py-1">
-        <a class="text-decoration-none fs-4 text-light" href="#home" onclick="toggleSidebar()">Home</a>
-      </div>
-      <div class="px-3 py-1">
-        <a class="text-decoration-none fs-4 text-light" href="#about" onclick="toggleSidebar()">About</a>
-      </div>
-      <div class="px-3 py-1">
-        <a class="text-decoration-none fs-4 text-light" href="#more" onclick="toggleSidebar()">More</a>
-      </div>
+      
+      <a class="text-decoration-none fs-4 text-light" href="#home" onclick="toggleSidebar()">
+        <div class="px-3 py-1 bar">
+          <p class="fs-4 text-light m-0">Home</p>
+        </div>
+      </a>
+
+      <a class="text-decoration-none fs-4 text-light" href="#about" onclick="toggleSidebar()">
+        <div class="px-3 py-1 bar">
+          <p class="fs-4 text-light m-0">About</p>
+        </div>
+      </a>
+
+      
+      <a class="text-decoration-none fs-4 text-light" href="#more" onclick="toggleSidebar()">
+        <div class="px-3 py-1 bar">
+          <p class="fs-4 text-light m-0">More</p>
+        </div>
+      </a>
     </div>
 
     <!-- Header -->
